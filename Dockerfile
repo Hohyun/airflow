@@ -9,8 +9,9 @@ RUN apt-get update \
 
 USER airflow
 
+ADD requirements.txt .
+RUN pip install apache-airflow==${AIRFLOW_VERSION} -r requirements.txt
+
 RUN curl https://dl.min.io/client/mc/release/linux-amd64/mc -o $HOME/mc \
   && chmod +x $HOME/mc
 
-ADD requirements.txt .
-RUN pip install apache-airflow==${AIRFLOW_VERSION} -r requirements.txt
