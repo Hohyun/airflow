@@ -1,0 +1,11 @@
+apache-airflow-providers-common-messaging
+apache-airflow-providers-apache-kafka
+apache-airflow-providers-common-sql
+apache-airflow-providers-apache-iceberg
+apache-airflow-providers-trino
+apache-airflow-providers-postgres
+apache-airflow-providers-mysql
+apache-airflow-providers-oracle
+dremio-simple-query
+quixstreams
+minio
